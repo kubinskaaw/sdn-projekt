@@ -16,3 +16,13 @@ sudo mn --custom ./topo.py --topo=topo
 ### Algorytm rozwiązania problemu sieci z przepływami 'elephant flows'
 
 ![Algorytm](https://github.com/kubinskaaw/sdn-projekt/blob/main/Algorithm.png)
+
+
+### Uruchamianie całego rozwiązania
+1. Pobrać [mininet-flow-generator](https://github.com/stainleebakhla/mininet-flow-generator).
+2. Pobrać katalog Floodlight z tego repozytorium
+3. W plikach [mininet-flow-generator](https://github.com/stainleebakhla/mininet-flow-generator) podmienić plik mesh.py na nasz plik topo.py ze zmienioną nazwą na mesh.py
+4. Uruchomić generator przy pomocy komendy: sudo ./topo_launcher.py --topo=mesh --mac --controller=remote,ip=127.0.0.1,port=6653
+5. Uruchomić sterownik floodlight przy pomocy Ant Runa ustawionego na run
+6. Wysłać zapytanie postman z hostami do endpointa /lab/hosts
+7. Rozpocząć generowanie ruchu
