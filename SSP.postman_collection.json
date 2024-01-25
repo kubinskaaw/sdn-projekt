@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "48bd2503-ce96-41d7-9fd2-7b7d0eee22c5",
+		"name": "SSP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Recalculate paths",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.43.37:8080/lab/hosts",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"37"
+					],
+					"port": "8080",
+					"path": [
+						"lab",
+						"hosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add hosts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"ip\": \"10.0.0.1\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:06\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.2\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:02\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.3\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:01\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.4\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:04\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.5\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:03\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.6\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:05\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.7\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:07\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.8\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:08\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.9\",\r\n        \"port\": 3,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:09\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.10\",\r\n        \"port\": 3,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:0a\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.11\",\r\n        \"port\": 6,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:0b\"\r\n    },\r\n    {\r\n        \"ip\": \"10.0.0.12\",\r\n        \"port\": 4,\r\n        \"datapathId\": \"00:00:00:00:00:00:00:0c\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.43.37:8080/lab/hosts",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"43",
+						"37"
+					],
+					"port": "8080",
+					"path": [
+						"lab",
+						"hosts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
